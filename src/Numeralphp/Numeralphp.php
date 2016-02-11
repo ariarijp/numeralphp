@@ -18,12 +18,9 @@ class Numeralphp
      *
      * @return [type] [description]
      */
-    public static function new($value)
+    public function __construct($value)
     {
-        $o = new self();
-        $o->_value = $value;
-
-        return $o;
+        $this->_value = $value;
     }
 
     /**
